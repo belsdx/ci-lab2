@@ -1,0 +1,10 @@
+# Не включать в контекст сборки образов
+.git
+.gitignore
+.dockerignore
+data-producer/
+data-consumer/
+compose.yaml
+README.md
+**/__pycache__
+**/*.pyc

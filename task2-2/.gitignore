@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+
+# Редакторы / ОС
+.vscode/
+.idea/
+.DS_Store

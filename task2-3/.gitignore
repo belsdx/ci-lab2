@@ -1,0 +1,12 @@
+# Связанные точки монтирования (данные приложений)
+data-producer/
+data-consumer/
+
+# Python
+__pycache__/
+*.pyc
+
+# Редакторы / ОС
+.vscode/
+.idea/
+.DS_Store

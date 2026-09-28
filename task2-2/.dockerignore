@@ -1,0 +1,7 @@
+# Не включать в контекст сборки
+.git
+.gitignore
+.dockerignore
+README.md
+**/__pycache__
+**/*.pyc

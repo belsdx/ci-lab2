@@ -1,0 +1,19 @@
+services:
+  worker1:
+    build: ./worker1
+    volumes:
+      # ./data  монтируется в /var/data (исходные данные)
+      - ./data:/var/data
+      # ./result-1 монтируется в /var/result (промежуточные данные)
+      - ./result-1:/var/result
+
+  worker2:
+    build: ./worker2
+    volumes:
+      # ./result-1 монтируется в /var/data (промежуточные результаты
+      # программы 1 становятся исходными данными программы 2)
+      - ./result-1:/var/data
+      # ./result монтируется в /var/result (финальный результат)
+      - ./result:/var/result
+    depends_on:
+      - worker1
